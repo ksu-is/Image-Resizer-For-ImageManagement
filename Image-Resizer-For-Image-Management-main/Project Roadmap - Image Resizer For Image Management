@@ -1,0 +1,13 @@
+#Project Roadmap - Image Resizer for Image Management 
+
+## Tasks (Sprint 1)
+> [x] Choose a project topic
+> [x] Create project repository and fork it to the KSU-IS organization 
+> [x] Write and Commit README.md
+> [x] Write and Commit Project Roadmap.md 
+> [x] Find and Evaluate existing Python Repository that will be utilized for this project. Here we will utilize Pillow
+> [ ] Test and evaluate Pillow code and document results
+> [ ] After testing list any potential issues that may arise and how to bypass them
+
+### Assigned to:
+All work is assigned to Tyler (This is a solo project)
