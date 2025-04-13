@@ -1,3 +1,5 @@
+# main.py
+# Bulk Image Resizer 
 def main():
     print("Bulk Image Resizer starting...")
 
