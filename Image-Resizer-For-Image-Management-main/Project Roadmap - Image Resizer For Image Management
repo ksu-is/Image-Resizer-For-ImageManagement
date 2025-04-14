@@ -6,8 +6,16 @@
 > [x] Write and Commit README.md
 > [x] Write and Commit Project Roadmap.md 
 > [x] Find and Evaluate existing Python Repository that will be utilized for this project. Here we will utilize Pillow
-> [ ] Test and evaluate Pillow code and document results
-> [ ] After testing list any potential issues that may arise and how to bypass them
+> [x] Test and evaluate Pillow code and document results
+> [x] After testing list any potential issues that may arise and how to bypass them
+
+## Tasks (Sprint 2)
+> [x] Create and commit main Python file (main.py)
+> [x] Add code to import, select, and display attributes of image file
+> [] Add code to accept folder input and identify all image files for batch process
+> [] Add image resizing functionality 
+> [] Add code to save resized image to a new file
+> [] Add ability to resize by percentage (%)
 
 ### Assigned to:
 All work is assigned to Tyler (This is a solo project)
