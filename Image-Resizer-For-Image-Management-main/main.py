@@ -7,6 +7,26 @@ import os
 import glob
 from PIL import Image
 
+#Image resizing functionality 
+def resize_images(images):
+    if not images:
+        print("There are not images to resize. Please try again")
+        return
+    try:
+        new_width = int(input("Enter the desired width: "))
+        new_height = int(input("Enter the desired height: "))
+    except ValueError:
+        print("Invalid input. Please enter whole numbers then try again.")
+    
+    for img_info in images:
+        path = img_info["path"]
+        img = img_info["image"]
+        print(f"\nResizing: {os.path.basename(path)}")
+        print(f"Original Size: {img.size}")
+        resized_img = img.resize((new_width, new_height))
+        print(f"Resized to: {resized_img.size}")
+        img_info["resized"] = resized_img
+
 #Creates def function to load single image and displays its attributes
 def process_single_image():
     try:
