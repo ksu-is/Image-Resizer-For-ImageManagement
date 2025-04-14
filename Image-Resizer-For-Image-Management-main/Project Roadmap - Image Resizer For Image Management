@@ -12,7 +12,7 @@
 ## Tasks (Sprint 2)
 > [x] Create and commit main Python file (main.py)
 > [x] Add code to import, select, and display attributes of image file
-> [] Add code to accept folder input and identify all image files for batch process
+> [x] Add code to accept folder input and identify all image files for batch process
 > [] Add image resizing functionality 
 > [] Add code to save resized image to a new file
 > [] Add ability to resize by percentage (%)
