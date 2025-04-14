@@ -2,24 +2,26 @@
 # Bulk Image Resizer 
 
 # Imports the Image module from the Pillow Library
-# Allows the user to open, manipulate, and inspect image files
+# Allows the user to open, manipulate, and inspect image files/files
+import os
+import glob
 from PIL import Image
 
-# The main function that will run when the script is executed
-def main():
+#Creates def function to load single image and displays its attributes
+def process_single_image():
     try:
-        image_path = input("Enter the path to your image file: ") # Asks the user for the path to an image file
-        img = Image.open(image_path) # Opens the image using Pillow
-        
-        # Prints confirmation that the Image was opened, pulls relevant qualities of image, and displays them
-        print(f"Image loaded successfully: {image_path}") # Confirmation 
-        print(f"Format: {img.format}") #format type (JPEG, PNG, etc.)
-        print(f"Size: {img.size}")  # Size of image (Ex: 1920 x 1080)
-        print(f"Mode: {img.mode}") # The "mode" (e.g. RGB, Greyscale, etc)
-
-    # Prints error message if the image file is not found 
+        image_path = input("Enter the path to your image file: ")
+        img = Image.open(image_path)
+        print(f"Image loaded successfully: {image_path}")
+        print(f"Format: {img.format}")
+        print(f"Size: {img.size}")
+        print(f"Mode: {img.mode}")
     except Exception as e:
-        print(f" Failed to load image: {e}")
+        print(f"Failed to load image: {e}")
+
+
+def main():
+
 
 if __name__ == "__main__":
     main()
