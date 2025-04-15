@@ -14,8 +14,8 @@
 > [x] Add code to import, select, and display attributes of image file
 > [x] Add code to accept folder input and identify all image files for batch process
 > [x] Add image resizing functionality 
-> [] Add code to save resized image to a new file
-> [] Add ability to resize by percentage (%)
+> [x] Add code to save resized image to a new file
+
 
 ### Assigned to:
 All work is assigned to Tyler (This is a solo project)
