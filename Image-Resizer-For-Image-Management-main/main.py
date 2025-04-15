@@ -27,6 +27,30 @@ def resize_images(images):
         print(f"Resized to: {resized_img.size}")
         img_info["resized"] = resized_img
 
+# Creates and saves the resized image(s) into a new folder 
+def save_resized_images(images):
+    if not images:
+        print ("There are no images to save.")
+    resized_images = [img for img in images if "resized" in img]
+    if not resized_images:
+        print("No images were resized. Please resize images before saving")
+        return
+    save_folder = input("Enter the name of the destination folder for saved images: ")
+    if not os.path.exists(save_folder):
+        os.makeirs(save_folder)
+    
+    for img_info in resized_images:
+        original_name = os.path.basemane(img_info["path"])
+        name_no_ext, ext = os.path.splitext(original_name)
+        save_path = os.path.join(save_folder, f"{name_no_ext}_resized{ext}")
+
+        try:
+            img_info["resized"].save(save_path)
+            print(f"Saved as: {save_path}")
+        except Exception as e:
+            print(f"Failed to save {original_name}: {e}")
+
+
 #Creates def function to load single image and displays its attributes
 def process_single_image():
     try:
