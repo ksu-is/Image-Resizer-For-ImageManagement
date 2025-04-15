@@ -70,6 +70,21 @@ def process_folder_images():
 
 def main():
 
+# Asks the user to choose option 1 (single image processing) or option 2 (bulk image processing) and calls the corresponding function
+ print("Choose an option:")
+    print("1 - Process a single image file")
+    print("2 - Process images in a folder (bulk processing)")
 
+    choice = input("Enter 1 or 2: ").strip()
+
+    if choice == '1':
+        image_list = process_single_image()
+        resize_images(image_list)
+    elif choice == '2':
+        image_list = process_folder_images()
+        resize_images(image_list)
+    else:
+        print("Invalid input. Please select one of the given options.")
+        
 if __name__ == "__main__":
     main()
